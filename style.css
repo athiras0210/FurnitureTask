@@ -1,0 +1,79 @@
+body {
+    font-family: 'Croissant One', cursive;
+}
+
+.nav-item:hover{
+    background-color: rgb(101, 104, 107);
+}
+
+img {
+    width: 100%;
+    height: 750px;
+}
+
+#icongift {
+    width: 120px;
+    height: 120px;
+}
+
+.vl {
+    border-left: 6px solid black;
+    height: 150px;
+}
+
+#couponimg {
+    width: 230px;
+    height: 90px;
+}
+
+.flexer {
+    height: 165px;
+}
+
+.card:hover {
+    border: 1px solid black;
+    box-shadow: 2px ridge black;
+    width: 103%;
+}
+
+.cardimg {
+    width: 100%;
+    height: 290px;
+}
+
+.checked {
+    color: yellow;
+    font-size: 20px;
+}
+
+.unchecked {
+    font-size: 20px;
+    color: rgb(60, 60, 11);
+}
+
+.notp {
+    text-decoration: line-through;
+}
+
+
+.button1:hover{
+    width: auto;
+    background-color: yellow;
+    color: brown;
+}
+
+a{
+    text-decoration: none;
+}
+
+.head1{
+    text-shadow: 1px 2px 3px red;
+}
+
+#searchinput{
+    width: 100px;
+}
+
+#searchbtn{
+    width: 100px;
+}
