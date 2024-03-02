@@ -1,44 +1,41 @@
-body {
-    font-family: 'Croissant One', cursive;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.nav-item:hover{
+body {
+    font-family: 'Croissant One', cursive;
+    overflow-x: hidden;
+}
+
+.nav-item:hover {
     background-color: rgb(101, 104, 107);
 }
 
-img {
-    width: 100%;
-    height: 750px;
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    /* Ensures the image maintains its aspect ratio */
 }
 
-#icongift {
-    width: 120px;
-    height: 120px;
+.vertical-line {
+    border-left: 1px solid #000;
+    /* Adjust color and thickness as needed */
+    height: 85%;
+    /* Ensures the line stretches to the height of its container */
+    font-weight: bolder;
 }
 
-.vl {
-    border-left: 6px solid black;
-    height: 150px;
+.img-fluid {
+    max-width: 60%;
+    height: auto;
 }
 
-#couponimg {
-    width: 230px;
-    height: 90px;
-}
-
-.flexer {
-    height: 165px;
-}
-
-.card:hover {
-    border: 1px solid black;
-    box-shadow: 2px ridge black;
-    width: 103%;
-}
-
-.cardimg {
-    width: 100%;
-    height: 290px;
+#btn1 {
+    height: 40%;
+    max-width: 170%;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .checked {
@@ -51,29 +48,66 @@ img {
     color: rgb(60, 60, 11);
 }
 
-.notp {
-    text-decoration: line-through;
+.card {
+    transition: transform 0.3s ease-in-out;
 }
 
-
-.button1:hover{
-    width: auto;
-    background-color: yellow;
-    color: brown;
+.card:hover {
+    transform: scale(1.05);
 }
 
-a{
-    text-decoration: none;
+.hidden-on-large {
+    display: none !important;
 }
 
-.head1{
-    text-shadow: 1px 2px 3px red;
+.hidden-on-small {
+    display: flex !important;
 }
 
-#searchinput{
-    width: 100px;
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
-#searchbtn{
-    width: 100px;
+/* Styles for small screens (less than 600px wide) */
+@media only screen and (max-width: 600px) {
+
+    #text {
+        font-size: 0.5rem;
+    }
+
+    .responsive-image {
+        max-width: 200%;
+        height: 80%;
+        /* Ensures the image maintains its aspect ratio */
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    #btn1 {
+        height: 40%;
+        max-width: 170%;
+        font-size: 0.5rem;
+    }
+
+    .hidden-on-large {
+        display: flex !important;
+    }
+
+    .hidden-on-small {
+        display: none !important;
+    }
+
+    /* Your CSS styles for small screens go here */
+
+    .carousel-caption h1 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
 }
